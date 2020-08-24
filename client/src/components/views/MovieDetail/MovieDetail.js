@@ -58,7 +58,13 @@ function MovieDetail(props) {
         <div
           style={{ display: 'flex', justifyContent: 'center', margin: '2rem' }}
         >
-          <button onClick={toggleActorView}> Toggle Actor View </button>
+          <button
+            style={{ width: '150px', height: '50px' }}
+            onClick={toggleActorView}
+          >
+            {' '}
+            Toggle Actor View{' '}
+          </button>
         </div>
         {ActorToggle && (
           <Row gutter={[16, 16]}>
